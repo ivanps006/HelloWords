@@ -27,8 +27,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun check(){
-
-        // CORRECCIÓN: comprobar el EditText (etName) en lugar del TextView tvName
         if (binding.etName.text.isNotEmpty()){
             val intent = Intent(this, ResultActivity::class.java)
             intent.putExtra("INTENT_NAME", binding.etName.text.toString())
